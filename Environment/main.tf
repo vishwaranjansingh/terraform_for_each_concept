@@ -12,3 +12,10 @@ module "container_details" {
     source = "../Child/Container"
     container = var.container
 }
+module "virtul_network_details" {
+    depends_on = [ var.resource_group ]
+  source = "../Child/Virtual_network"
+  virtual_network = var.virtual_network
+
+
+}

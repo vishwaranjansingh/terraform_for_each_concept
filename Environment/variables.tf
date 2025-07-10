@@ -7,3 +7,6 @@ variable "storage_account" {
 variable "container" {
     type = map(any)
 }
+variable "virtual_network" {
+  type = map(any)
+}
